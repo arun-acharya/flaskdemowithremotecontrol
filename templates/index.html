@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+   <head>
+      <title>GPIO Control</title>
+      <link rel="stylesheet" href='../static/style.css'/>
+   </head>
+   <body><table align='center'><tr><td>
+		<h1>Actuators</h1>
+		<h2> Status </h2>
+		<h3> LED 1 Status ==>
+			{%if led1sts == 0: %}OFF{%endif%}
+			{%if led1sts == 1: %}ON{%endif%}</h3> <!-- shows OFF if the led status is 0, and ON if fan status is 1 -->
+		<h3> LED 2 Status ==> 
+			 {%if led2sts == 0: %}OFF{%endif%}
+			 {%if led2sts == 1: %}ON{%endif%}</h3> <!-- shows OFF if the led status is 0, and ON if led status is 1 -->
+		<h3> LED 3 Status ==> 
+			 {%if led3sts == 0: %}OFF{%endif%}
+			 {%if led3sts == 1: %}ON{%endif%}</h3> <!-- shows OFF if the led status is 0, and ON if led status is 1 -->
+		<h3> LED 4 Status ==> 
+			 {%if led4sts == 0: %}OFF{%endif%}
+			 {%if led4sts == 1: %}ON{%endif%}</h3> <!-- shows OFF if the led status is 0, and ON if led status is 1 -->
+		
+		<h2> Commands </h2>
+		
+		<h3> 
+			LED 1 Control ==> 
+			<a href="/led1/on" class="button">TURN ON</a>  
+			<a href="/led1/off"class="button">TURN OFF</a>
+		</h3>
+		<h3> 
+			LED 2 Control ==> 
+			<a href="/led2/on" class="button">TURN ON</a>  
+			<a href="/led2/off"class="button">TURN OFF</a>
+		</h3>
+		<h3> 
+			LED 3 Control ==> 
+			<a href="/led3/on" class="button">TURN ON</a>  
+			<a href="/led3/off"class="button">TURN OFF</a>
+		</h3>
+		<h3> 
+			LED 4 Control ==> 
+			<a href="/led4/on" class="button">TURN ON</a>  
+			<a href="/led4/off"class="button">TURN OFF</a>
+		</h3>
+		
+   </body>
+</html>
